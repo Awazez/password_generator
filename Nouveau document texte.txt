@@ -1,0 +1,35 @@
+Description du code HTML : 
+
+- coder le html pour le password generator. 
+créer une div 
+
+Slider 
+
+length faire un menu déroulant min 4 max 64 
+- Créer un bouton menu déroulant type range 
+
+Checkbox 
+
+- créer 4 checkbox type checkbox 
+4 en corrélation avec les variables. 
+
+- Créer 4 label en fonction des variables déjà définis. 
+
+
+- Un bouton générer le password 
+une div avec le password. 
+
+
+- faire le css 
+- faire le javascript. 
+
+Créer la fonction qui génère le mot de passe. 
+
+définir les variables
+
+numbers 0-9
+symbols !@#$%^&*
+Letters a-z
+Capital letters A-Z
+
+algorythme : 
