@@ -15,10 +15,6 @@ Checkbox
 
 - Créer 4 label en fonction des variables déjà définis. 
 
-numbers 0-9
-symbols !@#$%^&*
-Letters a-z
-Capital letters A-Z
 
 - Un bouton générer le password 
 une div avec le password. 

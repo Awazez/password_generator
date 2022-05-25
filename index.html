@@ -5,42 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
+
     <title>Document</title>
 </head>
 <body>
   <div id="password"> 
 
+<p id="demo"></p>
   
-  <div>
-    <input type="range" min="8" max="128">
-  </div>
+  <input type="range" value="24" min="8" max="128" oninput="this.nextElementSibling.value = this.value">
+  <output id="slider">8</output>
+  
 
   <div>
-    <input type="checkbox" id="letters">
-    <label>A-Z</label>
-    
+    <label>Numbers 0-9</label>
+    <input type="checkbox" id="numbers">
   </div>
   <div>
-    <input type="checkbox" id="letters">
-    <label>a-z</label>
-    
-  </div>
-  
-  <div>
-    <input type="checkbox" id="letters">
-    <label>0-9</label>
-    
-  </div>
-  <div>
-    <input type="checkbox" id="letters">
-    <label>!@#$%^&* </label>
-  
+    <label>symbols !@#$%^&* </label>
+    <input type="checkbox" id="symbols">
   </div>
 
+  <label> Letters a-z</label>
+  <input type="checkbox" id="letters">
+
   <div>
-    <input type="button" value="Generate password">
+    <label> Capital letters A-Z</label>
+  <input type="checkbox" id="CapitalLetter">
+  </div>
+
+
+  <div>
+    <input type = "button" onclick = "generatePassword()" value = "Display">
+  </div>
+  <div>
+    
   </div>
   
 </div>
+<script type="text/javascript" src='script.js'></script>
 </body>
 </html>
