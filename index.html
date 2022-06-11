@@ -5,45 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>
-  <div id="password"> 
+<body >
 
-<p id="demo"></p>
-  
-  <input type="range" value="24" min="8" max="128" oninput="this.nextElementSibling.value = this.value">
-  <output id="slider">8</output>
-  
-
-  <div>
-    <label>Numbers 0-9</label>
-    <input type="checkbox" id="numbers">
-  </div>
-  <div>
-    <label>symbols !@#$%^&* </label>
-    <input type="checkbox" id="symbols">
-  </div>
-
-  <label> Letters a-z</label>
-  <input type="checkbox" id="letters">
-
-  <div>
-    <label> Capital letters A-Z</label>
-  <input type="checkbox" id="CapitalLetter">
-  </div>
-
-
-  <div>
-    <input type = "button" onclick = "generatePassword()" value = "Display">
-  </div>
-  <div>
+  <div class="flex items-center justify-center  bg-gray-100">
+    <div class="px-8 py-6 bg-white shadow-lg">
+      <span id="pwd_txt" type="password" placeholder="Password" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">J75eK4hNxDAFGgDOVd3GUH1r</span>
     
+    </div>
   </div>
-  
+
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg">
+      <h3 class="text-2xl font-bold text-center">Password Generator</h3>
+
+        <div>
+          <div class="mt-4">
+            <input type="range" class="w-full" id="slider" value="24" min="2" max="128" step="1" oninput="DisplayChange(this.value)">
+        
+            <span id="value">24</span>
+          </div>
+
+          <div class="mt-4">
+            <label>Numbers 0-9</label>
+            <input type="checkbox" id="checkboxNumbers" checked>
+          </div>
+
+          <div class="mt-4">
+            <label>symbols !@#$%^&* </label>
+            <input type="checkbox" id="checkboxSymbols" >
+          </div>
+        
+        <div class="mt-4">
+          <label> Letters a-z</label>
+      <input type="checkbox" id="checkboxLetters" checked>
+        </div>
+
+        <div class="mt-4">
+          <label> Capital letters A-Z</label>
+        <input type="checkbox" id="checkboxCapitalLetters" checked>
+        </div> 
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <button id="generate"  class="action-btn px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900" >Generate Password</button>
+                  <button id="clipboard" class="clipboard px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900" >Copy</button>
+                </div>
+                  
+              </div>
+          </div>
+      </form>
+  </div>
 </div>
+
+
+
 <script type="text/javascript" src='script.js'></script>
 </body>
 </html>
